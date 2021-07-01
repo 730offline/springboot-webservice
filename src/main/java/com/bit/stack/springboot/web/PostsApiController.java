@@ -1,7 +1,7 @@
 package com.bit.stack.springboot.web;
 
 import com.bit.stack.springboot.service.posts.PostsService;
-import com.bit.stack.springboot.web.dto.PostSaveRequestDto;
+import com.bit.stack.springboot.web.dto.PostsSaveRequestDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -14,7 +14,7 @@ public class PostsApiController {
     private final PostsService postsService;
 
     @PostMapping("/api/v1/posts")
-    public Long save(@RequestBody PostSaveRequestDto requestDto){
+    public Long save(@RequestBody PostsSaveRequestDto requestDto){
         return postsService.save(requestDto);
     }
 }
