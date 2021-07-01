@@ -1,7 +1,5 @@
-package com.bit.stack.springboot.web.domain.posts;
+package com.bit.stack.springboot.domain.posts;
 
-import com.bit.stack.springboot.domain.posts.Posts;
-import com.bit.stack.springboot.domain.posts.PostsRepository;
 import org.junit.After;
 import org.junit.Test;
 import org.junit.runner.RunWith;
